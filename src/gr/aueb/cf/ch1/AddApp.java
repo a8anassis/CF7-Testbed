@@ -8,6 +8,7 @@ package gr.aueb.cf.ch1;
 public class AddApp {
 
     public static void main(String[] args) {
+
         // Δήλωση και Αρχικοποίηση Μεταβλητών
         int num1 = 5;
         int num2 = 12;
