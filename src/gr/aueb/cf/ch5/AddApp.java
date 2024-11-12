@@ -10,17 +10,17 @@ public class AddApp {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int a = 0;
-        int b = 0;
+        int num1 = 0;
+        int num2 = 0;
         int sum = 0;
         int sub = 0;
 
         System.out.println("Please enter two integers");
-        a = scanner.nextInt();
-        b = scanner.nextInt();
+        num1 = scanner.nextInt();
+        num2 = scanner.nextInt();
 
-        sum = add(a, b);
-        sub = AddApp.sub(a, b);
+        sum = add(num1, num2);
+        sub = sub(num1, num2);
 
         System.out.println(sum);
         System.out.println(sub);
