@@ -4,6 +4,10 @@ public class PowerApp {
 
     public static void main(String[] args) {
 
+        for (int b = 1, p = 1; b <= 10; b++, p++) {
+            System.out.printf("%,d\n", pow(b, p));
+        }
+
     }
 
     /**
