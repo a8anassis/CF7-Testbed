@@ -18,6 +18,12 @@ public class SwapApp {
         arr[1] = tmp;
     }
 
+    public static void swap(int[] arr, int i, int j) {
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+
     public static void printArray(int[] arr) {
         for (int el : arr) {
             System.out.print(el + " ");
