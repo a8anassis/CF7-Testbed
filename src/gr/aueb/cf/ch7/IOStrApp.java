@@ -1,4 +1,4 @@
-package gr.aueb.cf.cf7;
+package gr.aueb.cf.ch7;
 
 import java.util.Scanner;
 

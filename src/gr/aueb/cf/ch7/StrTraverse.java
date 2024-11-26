@@ -1,4 +1,4 @@
-package gr.aueb.cf.cf7;
+package gr.aueb.cf.ch7;
 
 /**
  * Traverses one-by-one all string chars.
