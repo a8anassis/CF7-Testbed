@@ -60,7 +60,7 @@ public class ExceptionTypes {
     }
 
 
-    public static char readAgainOneChar(char ch) throws IOException, IllegalArgumentException {
+    public static char readAgainOneChar(char ch) throws IOException {
         try {
             char inputChar = (char) System.in.read();
             if (inputChar != ch) throw new IllegalArgumentException("Char not fit");
