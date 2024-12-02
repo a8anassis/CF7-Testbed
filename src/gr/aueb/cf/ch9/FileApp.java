@@ -17,7 +17,7 @@ public class FileApp {
                 tokens = line.split("\\s+");
 
                 for (String token : tokens) {
-                    System.out.print(token + " ");
+                    System.out.print(token.trim() + " ");
                 }
                 System.out.println();
             }
