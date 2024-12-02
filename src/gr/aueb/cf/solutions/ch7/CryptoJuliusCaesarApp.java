@@ -45,19 +45,23 @@ public class CryptoJuliusCaesarApp {
 
     public static char cipher(char ch, int key) {
         int m, c;
+        int base = 'A';
+        int latinCount = 26;
 
-        m = ch - 65;
-        c = (m + key) % 26;
+        m = ch - base;
+        c = (m + key) % latinCount;
 
-        return (char) (c + 65);
+        return (char) (c + base);
     }
 
     public static char decipher(char ch, int key) {
         int m, c;
+        int base = 'A';
+        int latinCount = 26;
 
-        c = ch - 65;
+        c = ch - base;
 
-        m = ((c - key) + 26) % 26;
-        return (char) (m + 65);
+        m = ((c - key) + latinCount) % latinCount;
+        return (char) (m + base);
     }
 }
