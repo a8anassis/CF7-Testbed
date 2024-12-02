@@ -29,5 +29,25 @@
 | At least on positive                     | 20 marks        | Returns boolean. Uses for, if, boolean for assigning if it is positive and also break inside for if a positive found |
 | All elements are positive                | 20 marks        | Returns boolean. Uses for, if and a counter to calculate how many positives in the array. Compare with arr.length    |
 
+
+**Lotto App**
+Έχει δοθεί μία γενική λύση όπου δημιουργούνται όλοι οι συνδυασμοί ανά 6 των αριθμών που εισάγει ο χρήστης.
+Στη συνέχεια κάθε ένα συνδυασμός (εξάδα) ελέγχεται με βάση τα φίλτρα (το πολύ 3 άρτιοι, 3 περιττοί,
+3 συνεχόμενοι, 3 με τον ίδιο λήγοντα, 3 στην ίδια εξάδα)
+
+**Low and High Index**
+Η λύση απλά βρίσκει το πρώτο στοιχείο και στη συνέχεια σε μία 2η for συνεχίζει
+να αυξάνει το high όσο υπάρχει το ίδιο στοιχείο.
+
+**Max Cars**
+Μετατρέπουμε τον αρχικό δισδιάστατο πίνακα σε ένα δισδιάστατο
+όπου για κάθε γραμμή του αρχικού, παίρνουμε δύο γραμμές του transformed.
+Ταξινομούμε με την πρώτη στήλη που είναι η ώρα άφιξης / αναχώρησης.
+Η ταξινόμηση γίνεται με Comparator που δεν έχουμε δει ακόμα, που
+τυπικά λέει για κάθε γραμμή int[] με δύο στοιχεία να ταξινομήσει ως
+προς τη 1η στήλη. Στη συνέχεια η getMaxConcurrentCars μετράει τις
+συνεχόμενες αφίξεις (1 στη 2η στήλη).
+
+
 **ChatGPT Prompt**  
 Mark the answer using the Marking Rubric above. Provide feedback for each section on what was awarded marks, where to improve and how. Provide a feedback table.
