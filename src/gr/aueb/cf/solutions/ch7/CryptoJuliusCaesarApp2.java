@@ -3,8 +3,8 @@ package gr.aueb.cf.solutions.ch7;
 public class CryptoJuliusCaesarApp2 {
 
     public static void main(String[] args) {
-        String s = "JULIus CAESAR";
-        //String s = "abc";
+        //String s = "JULIus CAESAR";
+        String s = "abc";
         final int KEY = 1;
 
         String encrypted = encrypt(s, KEY);
@@ -48,17 +48,19 @@ public class CryptoJuliusCaesarApp2 {
 
     public static char cipher(char ch, int key) {
         int m, c;
+        int base = Character.isUpperCase(ch) ? 'A' : 'a';
 
-        m = (Character.isUpperCase(ch)) ? ch - 65 : (Character.isLowerCase(ch)) ? ch - 97 : 0;
+        m = ch - base;
         c = (m + key) % 26;
-        return (Character.isUpperCase(ch)) ? (char) (c + 65) : (Character.isLowerCase(ch)) ? (char) (c + 97) : 0;
+        return (char) (c + base);
     }
 
     public static char decipher(int ch, int key) {
         int m, c;
+        int base = Character.isUpperCase(ch) ? 'A' : 'a';
 
-        c = (Character.isUpperCase(ch)) ? ch - 65 : (Character.isLowerCase(ch)) ? ch - 97 : 0;
+        c = ch - base;
         m = ((c - key) + 26) % 26;
-        return (Character.isUpperCase(ch)) ? (char) (m + 65) : (Character.isLowerCase(ch)) ? (char) (m + 97) : 0;
+        return (char) (m + base);
     }
 }
