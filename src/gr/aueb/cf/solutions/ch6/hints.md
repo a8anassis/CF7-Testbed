@@ -19,6 +19,15 @@
 | Use appropriate comparisons inside the for-loop           | 30 marks        | if ((arr[i] < minValue) && (arr[i] < secondMinValue)) else if ((arr[i] > minValue) && (arr[i] < secondMinValue)) or similar                                                                 |
 | Test inside main method                                   | 10 marks        | Call the method appropriately, for instance secMin = getSecondMinPosition(arr); or secMin2 = findSecondMin(arr);                                                                            |
 
+**Marking Rubric for arrays as collections**
+
+| Criteria                                 | Mark Allocation | Description                                                                                                          |
+|------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
+| Returns the position of a specific value | 20 marks        | Uses for and if.                                                                                                     |
+| Filtering evens                          | 20 marks        | Uses for and if.                                                                                                     |
+| Mapping of each element to double        | 20 marks        | Uses for and expression * 2 for each element                                                                         |
+| At least on positive                     | 20 marks        | Returns boolean. Uses for, if, boolean for assigning if it is positive and also break inside for if a positive found |
+| All elements are positive                | 20 marks        | Returns boolean. Uses for, if and a counter to calculate how many positives in the array. Compare with arr.length    |
 
 **ChatGPT Prompt**  
 Mark the answer using the Marking Rubric above. Provide feedback for each section on what was awarded marks, where to improve and how. Provide a feedback table.
