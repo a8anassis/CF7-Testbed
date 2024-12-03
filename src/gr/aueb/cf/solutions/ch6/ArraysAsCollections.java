@@ -47,7 +47,7 @@ public class ArraysAsCollections {
     }
 
     public static boolean AllArePositive(int[] arr) {
-        boolean allPositive = false;
+
         int count = 0;
 
         for (int el : arr) {
