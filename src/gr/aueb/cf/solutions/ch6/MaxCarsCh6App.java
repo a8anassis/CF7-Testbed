@@ -37,24 +37,6 @@ public class MaxCarsCh6App {
         Arrays.sort(arr, Comparator.comparing((int[] a) -> a[0]));
     }
 
-    public static int getMaxOnes(int[][] arr) {
-        int times = 0;
-        int maxTimes = 0;
-        int i = 0;
-
-        while (i < arr.length) {
-            times = 0;
-
-            while ((i < arr.length) && (arr[i++][1] == 1)) {
-                times++;
-            }
-
-            if (times > maxTimes) maxTimes = times;
-        }
-
-        return maxTimes;
-    }
-
     /**
      * Returns the number of cars that are parked
      * during the same time interval.
