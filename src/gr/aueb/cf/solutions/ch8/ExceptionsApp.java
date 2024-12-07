@@ -1,4 +1,4 @@
-package gr.aueb.cf.solutions;
+package gr.aueb.cf.solutions.ch8;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

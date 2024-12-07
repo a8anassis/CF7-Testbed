@@ -1,6 +1,5 @@
-package gr.aueb.cf.ch8;
+package gr.aueb.cf.solutions.ch8;
 
-import javax.security.sasl.SaslClient;
 import java.util.Scanner;
 
 public class SimpleBank {
