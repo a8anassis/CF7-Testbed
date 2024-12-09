@@ -26,6 +26,6 @@ public class Armstrong {
             num /= 10;          // num = num / 10;
         }
 
-        System.out.printf("%d%s Armstrong", originalNum, (sum == originalNum) ? " is " : " is not " );
+        System.out.printf("%d%s Armstrong", originalNum, (sum == originalNum) ? " is" : " is not" );
     }
 }
