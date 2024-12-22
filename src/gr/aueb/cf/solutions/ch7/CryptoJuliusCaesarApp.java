@@ -6,9 +6,9 @@ package gr.aueb.cf.solutions.ch7;
 public class CryptoJuliusCaesarApp {
 
     public static void main(String[] args) {
-        String s = "JULIus CAESAR";
+        String s = "BUZZ";
         //String s = "abc";
-        final int KEY = 1;
+        final int KEY = 3;
 
         String encrypted = encrypt(s, KEY);
         System.out.println(encrypted);
