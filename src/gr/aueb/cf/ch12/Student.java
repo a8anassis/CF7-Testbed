@@ -2,12 +2,25 @@ package gr.aueb.cf.ch12;
 
 /**
  * Data class.
- * Encapsulation applied.
+ * POJO (Plain Old Java Object)
+ * Java Bean.
  */
 public class Student {
     private int id;
     private String firstname;
     private String lastname;
+
+    // Default Constructor
+    public Student() {
+
+    }
+
+    // Overloaded Constructor
+    public Student(int id, String firstname, String lastname) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
 
     public int getId() {
         return id;
