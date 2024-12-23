@@ -6,13 +6,19 @@ package gr.aueb.cf.ch12;
  * Java Bean.
  */
 public class Student {
+    private static int studentsCount;
+
     private int id;
     private String firstname;
     private String lastname;
 
+    static {
+        studentsCount = 0;
+    }
+
     // Default Constructor
     public Student() {
-
+        studentsCount++;
     }
 
     // Overloaded Constructor
@@ -20,6 +26,11 @@ public class Student {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
+        studentsCount++;
+    }
+
+    public static int getStudentsCount() {
+        return studentsCount;
     }
 
     public int getId() {
