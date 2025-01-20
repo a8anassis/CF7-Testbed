@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch16.skeletal;
+package gr.aueb.cf.ch16.skeletal2;
 
 public abstract class AbstractRectangle implements IRectangle {
     private double width;
