@@ -13,7 +13,7 @@ public class Knight implements IKnight, Runnable {
 
     @Override
     public void embarkOnMission(IMission mission) {
-        System.out.println(getName());
+        System.out.println(this.getName());
         //mission.setStatus(MissionStatus.STARTED);
         mission.embark();
     }
