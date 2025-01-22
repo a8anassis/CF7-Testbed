@@ -49,13 +49,13 @@ public class MobileContact extends AbstractEntity {
     @Override
     public boolean equals(Object other) {
         if (this == other) return true;
-        if (!(other instanceof MobileContact)) return false;
-        MobileContact that = (MobileContact) other;
+//        if (!(other instanceof MobileContact)) return false;
+//        MobileContact that = (MobileContact) other;
 
         // In Java 17 το παρακάτω κάνει δύο πράγματα
         // Έλεγχο αν είναι instanceof και αν ναι μετά κάνει
-        // typecast (όπως κάναμε πριν την Java 17 με τον παραπάνω κώδικα)
-        // if (!(other instanceof MobileContact that)) return false;
+        // typecast (όπως κάναμε πριν τη Java 17 με τον παραπάνω κώδικα)
+        if (!(other instanceof MobileContact that)) return false;
         return Objects.equals(getFirstname(), that.getFirstname())
                 && Objects.equals(getLastname(), that.getLastname())
                 && Objects.equals(getPhoneNumber(), that.getPhoneNumber());
