@@ -48,4 +48,5 @@ public class Trainee { //implements Cloneable {
         trainee.setCity(new City(city.getDescription()));
         return trainee;
     }
+
 }
