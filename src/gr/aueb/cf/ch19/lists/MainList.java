@@ -46,5 +46,15 @@ public class MainList {
         }
 
         cities.forEach(System.out::println);
+
+
+        Iterator<String> iter = cities.iterator();
+        while (iter.hasNext()) {
+            String city = iter.next();
+            if (city.equals("NY")) {
+                iter.remove();
+                // cities.remove(city);        // Exception
+            }
+        }
     }
 }

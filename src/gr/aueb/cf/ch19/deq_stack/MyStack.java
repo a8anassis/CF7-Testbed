@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch19.deq;
+package gr.aueb.cf.ch19.deq_stack;
 
 import java.util.Deque;
 import java.util.LinkedList;
