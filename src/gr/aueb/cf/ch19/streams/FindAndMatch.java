@@ -19,6 +19,8 @@ public class FindAndMatch {
 
         query.ifPresent(first -> System.out.println("First name" + first));
 
+
+        // Handling empty values with orElse and orElseThrow
         String strFirst = names.stream()
                 .filter(name -> name.equals("Bob"))
                 .findFirst().orElse(null);
