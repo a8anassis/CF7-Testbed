@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch20;
+package gr.aueb.cf.ch20.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

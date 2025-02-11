@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch20;
+package gr.aueb.cf.ch20.regex;
 
 public class RegExMain {
 

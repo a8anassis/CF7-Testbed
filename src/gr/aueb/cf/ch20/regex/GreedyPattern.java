@@ -1,14 +1,14 @@
-package gr.aueb.cf.ch20;
+package gr.aueb.cf.ch20.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ReluctantPattern {
+public class GreedyPattern {
 
     public static void main(String[] args) {
-        String s = "login:alice;pass:12345;login:bob;pass:12345678;";
+        String s = "login;alice;pass;12345;";
 
-        Pattern pattern = Pattern.compile(".*?;");   // As little as possible -- reluctant
+        Pattern pattern = Pattern.compile(".*;");   // As much as possible -- greedy
         Matcher matcher = pattern.matcher(s);
 
         while (matcher.find()) {
