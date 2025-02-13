@@ -9,6 +9,10 @@ public class Teacher {
 
     }
 
+    public Teacher(Long id) {
+        this.id = id;
+    }
+
     public Teacher(Long id, String firstname, String lastname) {
         this.id = id;
         this.firstname = firstname;
