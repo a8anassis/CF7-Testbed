@@ -6,8 +6,8 @@ public class Cat extends Animal {
         //super();
     }
 
-    public Cat(int id, String name) {
-        super(id, name);
+    public Cat(int age, String name) {
+        super(age, name);
     }
 
     @Override
@@ -17,6 +17,6 @@ public class Cat extends Animal {
 
     @Override
     public String toString() {
-        return "id: " + getId() + ", name: " + getName();
+        return "id: " + getAge() + ", name: " + getName();
     }
 }

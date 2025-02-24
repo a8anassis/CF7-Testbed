@@ -1,24 +1,24 @@
 package gr.aueb.cf.solutions.ch15;
 
 public abstract class Animal {
-    private int id;
+    private int age;
     private String name;
 
     public Animal() {
 
     }
 
-    public Animal(int id, String name) {
-        this.id = id;
+    public Animal(int age, String name) {
+        this.age = age;
         this.name = name;
     }
 
-    public int getId() {
-        return id;
+    public int getAge() {
+        return age;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {

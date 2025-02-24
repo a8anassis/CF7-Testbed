@@ -6,8 +6,8 @@ public class Dog extends Animal {
         //super();
     }
 
-    public Dog(int id, String name) {
-        super(id, name);
+    public Dog(int age, String name) {
+        super(age, name);
     }
 
     @Override
@@ -17,6 +17,6 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "id: " + getId() + ", name: " + getName();
+        return "id: " + getAge() + ", name: " + getName();
     }
 }
