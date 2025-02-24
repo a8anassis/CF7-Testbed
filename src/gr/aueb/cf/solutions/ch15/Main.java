@@ -10,4 +10,8 @@ public class Main {
         System.out.println(cat);
         System.out.println(dog);
     }
+
+    public static void doSpeak(Animal animal) {
+        animal.speak();
+    }
 }
