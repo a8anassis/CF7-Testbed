@@ -1,6 +1,6 @@
 package gr.aueb.cf.solutions.ch16.challenge2;
 
-public class Circle extends AbstractShape implements IShape, ITwoDimensional {
+public class Circle extends AbstractShape implements IShape, ITwoDimensional, ICircle {
     private double radius;
 
     public Circle() {}
@@ -24,6 +24,11 @@ public class Circle extends AbstractShape implements IShape, ITwoDimensional {
 
     @Override
     public double getCircumference() {
+        return 2 * Math.PI * getRadius();
+    }
+
+    @Override
+    public double getDiameter() {
         return 2 * Math.PI * getRadius();
     }
 }

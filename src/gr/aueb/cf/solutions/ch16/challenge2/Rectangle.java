@@ -1,7 +1,7 @@
 package gr.aueb.cf.solutions.ch16.challenge2;
 
 
-public class Rectangle extends AbstractShape implements IShape, ITwoDimensional {
+public class Rectangle extends AbstractShape implements IShape, ITwoDimensional, IRectangle {
     private double width;
     private double height;
 
