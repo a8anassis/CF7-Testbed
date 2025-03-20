@@ -1,6 +1,9 @@
 package gr.aueb.cf.solutions.ch16.challenge1;
 
+import java.io.Serializable;
+
 public class Circle extends AbstractShape implements ITwoDimensional {
+
     private double radius;
 
     public Circle() {}
@@ -21,4 +24,6 @@ public class Circle extends AbstractShape implements ITwoDimensional {
     public double getArea() {
         return Math.PI * getRadius() * getRadius();
     }
+
+
 }
