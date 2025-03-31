@@ -16,7 +16,6 @@ public class FahrenheitToCelsiusApp {
 
         System.out.print("Please insert degrees Fahrenheit: ");
         fahrenheit = scanner.nextInt();
-
         celsius = 5 * (fahrenheit - 32) / 9;
 
         System.out.printf("%d\u2109 = %d\u2103\n", fahrenheit, celsius);
