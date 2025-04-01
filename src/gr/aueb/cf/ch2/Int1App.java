@@ -5,7 +5,7 @@ package gr.aueb.cf.ch2;
  * int, byte, short, long μαζί με το μέγεθός τους,
  * και το range (min, max).
  */
-public class IntApp {
+public class Int1App {
 
     public static void main(String[] args) {
         System.out.printf("int. Size: %d bits, Min: %,d, Max: %,d\n", Integer.BYTES * 8, Integer.MIN_VALUE, Integer.MAX_VALUE);
