@@ -8,7 +8,7 @@ import java.util.Scanner;
  * σε συνολικά δευτερόλεπτα. Ο χρήστης δίνει τα
  * δεδομένα και εκτυπώνεται το τελικό αποτέλεσμα.
  */
-public class DateTimeToSecondsConverter {
+public class DateTimeToSecondsConverter7 {
 
     public static void main(String[] args) {
         final int SEC_PER_DAY = 3600 * 24;

@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Convert years (ages) to days.
  */
-public class YearsToDays {
+public class YearsToDays8 {
 
     public static void main(String[] args) {
         // Δήλωση και αρχικοποίηση μεταβλητών

@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch2;
 
-public class Date0App {
+public class DateApp1 {
 
     public static void main(String[] args) {
         int day = 8;

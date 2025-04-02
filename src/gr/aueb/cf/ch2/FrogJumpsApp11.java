@@ -17,7 +17,7 @@ package gr.aueb.cf.ch2;
  * 40 + 30 = 70
  * 70 + 30 = 100
  */
-public class FrogJumpsApp {
+public class FrogJumpsApp11 {
 
     public static void main(String[] args) {
         int target = 85;

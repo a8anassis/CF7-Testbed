@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Scanner Demo. Reads two integers from the
  * std input (keyboard) and calculates the result.
  */
-public class ScannerAddApp {
+public class ScannerAddApp5 {
 
     public static void main(String[] args) {
 

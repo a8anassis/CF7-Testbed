@@ -3,7 +3,7 @@ package gr.aueb.cf.ch2;
 /**
  * Count steps up, distance down by one.
  */
-public class Counter3App {
+public class CounterApp3 {
 
     public static void main(String[] args) {
         int steps = 0;

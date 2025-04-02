@@ -3,7 +3,7 @@ package gr.aueb.cf.ch2;
 /**
  * Math class demo.
  */
-public class MathDemo {
+public class MathDemo9 {
 
     public static void main(String[] args) {
         System.out.println("Το απόλυτο του -5 είναι: " + Math.abs(-5));

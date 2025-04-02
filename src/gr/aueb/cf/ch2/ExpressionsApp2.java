@@ -3,7 +3,7 @@ package gr.aueb.cf.ch2;
 /**
  * Expressions demo.
  */
-public class Expressions2App {
+public class ExpressionsApp2 {
 
     public static void main(String[] args) {
         int num1 = 10;

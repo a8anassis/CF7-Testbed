@@ -9,9 +9,9 @@ public class PriceWithVat {
 
     public static void main(String[] args) {
         final double VAT_RATE = 0.24;
-        double inputPrice = 0.0;
-        double priceWithVat = 0.0;
-        double vat = 0.0;
+        double inputPrice;
+        double priceWithVat;
+        double vat;
         Scanner in = new Scanner(System.in);
 
         System.out.println("Please insert the price");

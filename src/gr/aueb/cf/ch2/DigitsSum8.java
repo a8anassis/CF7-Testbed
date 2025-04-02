@@ -10,7 +10,7 @@ import java.util.Scanner;
  * ακέραιο 15, θα πρέπει το αποτέλεσμα να είναι
  * 1 + 5 = 6.
  */
-public class DigitsSum {
+public class DigitsSum8 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
