@@ -3,9 +3,8 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * Υπάρχει ένα SECRET που είναι integer και ο
- * χρήστης με μία μόνο προσπάθεια θα προσπαθήσει
- * να τον βρει.
+ * Υπάρχει ένα SECRET που είναι integer και ο χρήστης με
+ * μία μόνο προσπάθεια θα προσπαθήσει να τον βρει.
  */
 public class SecretFinder {
 
@@ -14,13 +13,14 @@ public class SecretFinder {
         int num = 0;
         final int SECRET = 12;
 
-        System.out.println("Insert a num to guess the secret");
+        System.out.println("Insert the secret to go on");
         num = scanner.nextInt();
 
-        if (num == SECRET) {
-            System.out.println("Secret found!!!");
-        } else {    // num != SECRET
-            System.out.println("Failure!!");
+        if (num != SECRET) {
+            System.out.println("Secret error");
+            System.exit(1);
         }
+
+        System.out.println("Secret was valid. You may go on");
     }
 }
