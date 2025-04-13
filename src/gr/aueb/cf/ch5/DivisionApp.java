@@ -3,26 +3,24 @@ package gr.aueb.cf.ch5;
 import java.util.Scanner;
 
 /**
- * Double demo.
+ * Διαίρεση και υπόλοιπο δεκαδικών.
  */
 public class DivisionApp {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         double num1;
         double num2;
-        double div = 0d;
-        double mod = 0.0;
-        float myFloat = 4.5F;
-        Scanner scanner = new Scanner(System.in);
+        double result = 0d;
+        double remaining = 0.0;
 
         System.out.println("Please enter two doubles");
         num1 = scanner.nextDouble();
         num2 = scanner.nextDouble();
+        result = num1 / num2;
+        remaining = num1 % num2;
 
-        div = num1 / num2;
-        mod = num1 % num2;
-
-        System.out.printf("Div: %.2f\n", div);
-        System.out.printf("Mod: %.2f", mod);
+        System.out.printf("Div: %5.2f\n", result);
+        System.out.printf("Mod: %5.2f", remaining);
     }
 }
