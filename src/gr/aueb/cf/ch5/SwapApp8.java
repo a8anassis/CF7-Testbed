@@ -1,6 +1,10 @@
 package gr.aueb.cf.ch5;
 
-public class SwapApp {
+/**
+ * Οι παράμετροι των μεθόδων λειτουργούν μόνο
+ * ως input παράμετροι.
+ */
+public class SwapApp8 {
 
     public static void main(String[] args) {
         int a = 10;
