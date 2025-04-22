@@ -1,6 +1,9 @@
 package gr.aueb.cf.ch5;
 
-public class PowerApp {
+/**
+ * Υπολογίζει τη δύναμη a^n.
+ */
+public class PowerApp8 {
 
     public static void main(String[] args) {
 
