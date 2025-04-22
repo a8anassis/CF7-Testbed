@@ -4,11 +4,12 @@ package gr.aueb.cf.ch5;
  * Υπολογίζει το παραγοντικό του n.
  * n! = 1 * 2 * 3 * ... * n
  */
-public class Factorial {
+public class Factorial8 {
 
     public static void main(String[] args) {
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i + "! =" + facto(i));
+        for (int i = 1; i <= 15; i++) {
+//            System.out.println(i + "! =" + facto(i));
+            System.out.printf("%3d! = %,15d\n", i, facto(i));
         }
     }
 
