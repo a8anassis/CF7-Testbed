@@ -27,7 +27,7 @@ public class Array10MinAndMax8 {
      */
     public static int getMinPosition(int[] arr) {
 
-        if (arr == null || arr.length < 1) return -1;
+        if (arr == null || arr.length < 1) return -1;   // -1 is non-valid array position
 
         int minPosition = 0;
         int minValue = arr[minPosition];
