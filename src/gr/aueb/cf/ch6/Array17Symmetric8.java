@@ -1,9 +1,11 @@
 package gr.aueb.cf.ch6;
 
-public class SymmetricApp {
+public class Array17Symmetric8 {
 
     public static void main(String[] args) {
-
+        int[] arr = {1, 2, 3, 4, 5};
+        boolean isSymmetric = isSymmetric(arr);
+        System.out.println(isSymmetric);
     }
 
     public static boolean isSymmetric(int[] arr) {
@@ -32,4 +34,5 @@ public class SymmetricApp {
         }
         return isSymmetric;
     }
+
 }
