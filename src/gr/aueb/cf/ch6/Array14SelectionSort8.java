@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch6;
 
-public class SelectionSort {
+public class Array14SelectionSort8 {
 
     public static void main(String[] args) {
         int[] arr = {6, 3, 7, 4, 4, 6, 7, 9, 3, 45, 67, 7};
@@ -25,8 +25,6 @@ public class SelectionSort {
                     minPosition = j;
                 }
             }
-
-            // Swap(minPos, i)
             swap(arr, minPosition, i);
         }
         return arr;
