@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch6;
 
-public class TwoDimArrayApp {
+public class Array12TwoDimArray8 {
 
     public static void main(String[] args) {
 
