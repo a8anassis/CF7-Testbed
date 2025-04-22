@@ -3,7 +3,7 @@ package gr.aueb.cf.ch6;
 /**
  * Demo with arrays and methods.
  */
-public class ArraysInMethods {
+public class Array5Methods8 {
 
     public static void main(String[] args) {
 
