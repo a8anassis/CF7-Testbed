@@ -1,6 +1,9 @@
 package gr.aueb.cf.ch5;
 
-public class PowerAppRecursive {
+/**
+ * Demo of power recursive.
+ */
+public class PowerAppRecursive8 {
 
     public static void main(String[] args) {
 
