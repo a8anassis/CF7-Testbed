@@ -3,7 +3,7 @@ package gr.aueb.cf.ch6;
 /**
  * Array search με μέθοδο.
  */
-public class ArraySearchWithMethod {
+public class Array6SearchWithMethod8 {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 7};
