@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch6;
 
-public class BubbleSort {
+public class Array15BubbleSort8 {
 
     public static void main(String[] args) {
         int[] arr = {6, 3, 7, 4};
