@@ -11,10 +11,11 @@ public class Array7ShallowCopy8 {
     public static void main(String[] args) {
 
         int[] initialArray = {1, 2, 3, 4, 5};
-        int[] arrayCopy = initialArray;         // Shallow Copy
+        int[] arrayCopy = initialArray;         // Reference copy is Shallow Copy
 
         arrayCopy[0] = 100;
 
+        // Side Effects
         for (int val : initialArray) {
             System.out.print(val + " ");
         }
