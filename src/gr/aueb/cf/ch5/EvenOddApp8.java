@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch5;
 
-public class EvenOddApp {
+public class EvenOddApp8 {
 
     public static void main(String[] args) {
         int num = 10;
@@ -9,12 +9,17 @@ public class EvenOddApp {
     }
 
 
+    /**
+     * Even.
+     * @param num
+     * @return
+     */
     public static boolean isEven(int num) {
         return num % 2 == 0;
     }
 
     /**
-     * Delegation Design Pattern.
+     * Odd.
      *
      * @param num
      * @return
