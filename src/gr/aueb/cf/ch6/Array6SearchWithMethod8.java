@@ -1,7 +1,8 @@
 package gr.aueb.cf.ch6;
 
 /**
- * Array search με μέθοδο.
+ * Array search με μέθοδο. Γραμμική
+ * Πολυπλοκότητα χρόνου. O(n)
  */
 public class Array6SearchWithMethod8 {
 
