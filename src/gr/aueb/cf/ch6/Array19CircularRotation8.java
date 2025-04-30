@@ -19,7 +19,6 @@ public class Array19CircularRotation8 {
         for (int i = 0; i < arr.length; i++) {
             rotated[i] = arr[(i + offset) % arr.length];
         }
-
         return rotated;
     }
 
