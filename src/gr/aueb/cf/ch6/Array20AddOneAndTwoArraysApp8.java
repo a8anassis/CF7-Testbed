@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch6;
 
-public class Array20AddOneApp8 {
+public class Array20AddOneAndTwoArraysApp8 {
 
     public static void main(String[] args) {
         int[] arr = {9, 9, 9, 9};
