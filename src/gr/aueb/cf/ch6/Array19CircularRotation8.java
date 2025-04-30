@@ -13,8 +13,6 @@ public class Array19CircularRotation8 {
     public static int[] doLeftShift(int[] arr, int offset) {
         if (arr == null) return null;
         if (offset < 0) return null;
-        offset = offset % arr.length; // Normalize large offsets
-        if (offset == 0) return arr.clone();
 
         int[] rotated = new int[arr.length];
 
@@ -28,9 +26,6 @@ public class Array19CircularRotation8 {
     public static int[] doRightShift(int[] arr, int offset) {
         if (arr == null) return null;
         if (offset < 0) return null;
-
-        offset = offset % arr.length; // Normalize large offsets
-        if (offset == 0) return arr.clone();
 
         int[] rotated = new int[arr.length];
 
