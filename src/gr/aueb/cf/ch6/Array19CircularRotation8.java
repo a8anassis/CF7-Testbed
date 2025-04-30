@@ -27,8 +27,6 @@ public class Array19CircularRotation8 {
         if (arr == null) return null;
         if (offset < 0) return null;
 
-
-
         int[] rotated = new int[arr.length];
 
         for (int i = 0; i < arr.length; i++) {
