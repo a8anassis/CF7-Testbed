@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * IO in Strings.
  */
-public class IOStrApp {
+public class Str4IOStrApp8 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

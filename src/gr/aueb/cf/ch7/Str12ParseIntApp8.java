@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Μετατρέπει ένα String σε ακέραιο.
  */
-public class ParseIntApp {
+public class Str12ParseIntApp8 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

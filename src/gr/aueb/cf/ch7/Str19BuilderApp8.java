@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch7;
 
-public class StrBuilderApp {
+public class Str19BuilderApp8 {
 
     public static void main(String[] args) {
         String concatStr = "";

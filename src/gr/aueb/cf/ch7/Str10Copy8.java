@@ -6,7 +6,7 @@ package gr.aueb.cf.ch7;
  * Οπότε έχουμε έγκυρο copy με αντιγραφή
  * της αναφοράς.
  */
-public class StrCopy {
+public class Str10Copy8 {
 
     public static void main(String[] args) {
         String s1 = "Athens";

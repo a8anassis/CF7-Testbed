@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch7;
 
-public class StrEquals {
+public class Str8Equals8 {
 
     public static void main(String[] args) {
         String s1 = "Athens";

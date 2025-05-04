@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch7;
 
-public class StrConcatApp {
+public class Str18ConcatApp8 {
 
     public static void main(String[] args) {
         String s1 = "Coding";

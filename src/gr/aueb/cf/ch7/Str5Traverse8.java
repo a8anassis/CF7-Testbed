@@ -2,8 +2,10 @@ package gr.aueb.cf.ch7;
 
 /**
  * Traverses one-by-one all string chars.
+ * Δεν μπορούμε με enhanced for γιατί έχουμε
+ * κλάση, όχι πίνακα.
  */
-public class StrTraverse {
+public class Str5Traverse8 {
 
     public static void main(String[] args) {
         String s = "Coding Factory";

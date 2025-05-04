@@ -4,7 +4,7 @@ package gr.aueb.cf.ch7;
  * Compares two strings for lt (less than),
  * gt (greater than), eq (equal)
  */
-public class StrCompareApp {
+public class Str9CompareApp8 {
 
     public static void main(String[] args) {
         String s1 = "Athens";
