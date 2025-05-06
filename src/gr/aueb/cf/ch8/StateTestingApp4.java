@@ -2,7 +2,7 @@ package gr.aueb.cf.ch8;
 
 import java.util.Scanner;
 
-public class StateTestingApp {
+public class StateTestingApp4 {
 
     public static void main(String[] args) {
 

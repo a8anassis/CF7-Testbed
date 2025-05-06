@@ -1,6 +1,7 @@
 package gr.aueb.cf.ch8;
 
 import javax.security.sasl.SaslClient;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class SimpleBank {
@@ -23,7 +24,7 @@ public class SimpleBank {
             balance += amount;
             System.out.println("Successfully deposited: " + amount);    // log
         } catch (Exception e) {
-            System.err.println("Error. " + e.getMessage());             // log
+            System.err.println(LocalDateTime.now() + "\tdeposit\n" + e);  // log
             throw e;
         }
     }
