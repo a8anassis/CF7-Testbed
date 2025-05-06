@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class PdfBufferedCopyApp {
+public class File4PdfBufferedCopyApp8 {
 
     public static void main(String[] args) {
         int b;
@@ -20,7 +20,7 @@ public class PdfBufferedCopyApp {
             start = System.currentTimeMillis();
             while ((b = fis.read(buffer)) != -1) {
                 fos.write(buffer, 0, b);
-                counter++;
+                counter += b;
             }
             end = System.currentTimeMillis();
             elapsedTime = (end - start) / 1000.0;

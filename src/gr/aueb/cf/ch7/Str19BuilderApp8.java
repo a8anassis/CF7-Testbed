@@ -19,7 +19,7 @@ public class Str19BuilderApp8 {
 
 
         timeStart = System.currentTimeMillis();
-        for (int i = 1; i <= 50_000; i++) {
+        for (int i = 1; i <= 50_000_000; i++) {
             sb.append(i);
         }
         timeEnd = System.currentTimeMillis();
