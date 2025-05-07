@@ -2,7 +2,7 @@ package gr.aueb.cf.ch8;
 
 import java.util.Scanner;
 
-public class NumberFormatExceptionApp {
+public class Exception7NumberFormatExceptionApp8 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -11,11 +11,9 @@ public class NumberFormatExceptionApp {
 
      //   try {
             System.out.println("Please insert an int");
-            inputStr = in.nextLine();
 
-            if (!isInt(inputStr)) {
-                System.out.println("Error in parsing.");
-                System.exit(1);
+            while (!isInteger(inputStr = in.nextLine())) {
+                System.out.println("Error in parsing. Παρακαλώ δώστε νέο ακέραιο");
             }
             num = Integer.parseInt(inputStr);
 
@@ -32,5 +30,9 @@ public class NumberFormatExceptionApp {
         } catch (NumberFormatException e) {
             return false;
         }
+    }
+
+    public static boolean isInteger(String s) {
+        return s.matches("-?\\d+");
     }
 }
