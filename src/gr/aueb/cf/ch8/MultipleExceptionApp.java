@@ -3,6 +3,7 @@ package gr.aueb.cf.ch8;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -15,7 +16,7 @@ public class MultipleExceptionApp {
             char ch = (char) System.in.read();
             int num = in.nextInt();
         } catch (FileNotFoundException | InputMismatchException e) {
-            System.err.println("Error. File not Found or Input Mismatch" + e.getMessage());
+            System.err.println(LocalDateTime.now() + "\n"  + e.getMessage());
             e.printStackTrace();
             //throw e;
         } catch (IOException e) {
