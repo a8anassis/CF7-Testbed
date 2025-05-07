@@ -2,6 +2,7 @@ package gr.aueb.cf.ch9;
 
 import javax.swing.text.Style;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -43,12 +44,14 @@ public class File1Read {
     }
 
     // For structured text with primitives - > int double string structured
-    public static void scannerRead(String file) throws FileNotFoundException {
-        try (Scanner sc = new Scanner(new File(file))) {
+    public static void scannerRead(String file) throws IOException {
+       // try (Scanner sc = new Scanner(new File(file))) {
+        try (Scanner sc = new Scanner(new File(file), StandardCharsets.UTF_8)) {
+
             while (sc.hasNextLine()) {
                 System.out.println(sc.nextLine());
             }
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             System.out.println(LocalDateTime.now() + "," + e);
             throw e;
         }
@@ -57,7 +60,8 @@ public class File1Read {
     // for large texts, powerful read-line
     public static void bufferedReaderRead(String file) throws IOException {
 
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+//        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8))) {
             String line;
 
             // Powerful read-line

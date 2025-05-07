@@ -1,10 +1,9 @@
 package gr.aueb.cf.ch8;
 
-import javax.security.sasl.SaslClient;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-public class SimpleBank {
+public class Exception11SimpleBank8 {
     static double balance = 500;
     static Scanner in = new Scanner(System.in);
 
