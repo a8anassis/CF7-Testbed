@@ -16,7 +16,11 @@ public class File1Read {
         bufferedReaderRead(file);
     }
 
-    // Char by char - Slow
+    /**
+     * Char-by-char read. Low performance.
+     * @param file
+     * @throws IOException
+     */
     public static void fileReaderRead(String file) throws IOException {
 
         // try with resources
@@ -28,6 +32,7 @@ public class File1Read {
         } catch (IOException e) {
             System.err.println(LocalDateTime.now() + "fileReaderRead" + e);
         }
+//        No need for finally if we try-with-resources
 //        finally {
 //            try {
 //                fr.close();
