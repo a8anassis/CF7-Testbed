@@ -1,10 +1,9 @@
 package gr.aueb.cf.ch8;
 
 import java.time.LocalDateTime;
-import java.util.Locale;
 import java.util.Scanner;
 
-public class Arithmetic3 {
+public class Exception3Arithmetic38 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num1;

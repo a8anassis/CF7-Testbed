@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch8;
 
-public class Arithmetic1 {
+public class Exception1Arithmetic8 {
 
     public static void main(String[] args) {
         int num1 = 10;
