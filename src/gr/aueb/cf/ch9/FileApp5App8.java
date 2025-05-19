@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class FileApp {
+public class FileApp5App8 {
 
     public static void main(String[] args) {
         File fd = new File("C:/tmp/file7.txt");     // C:\tmp\file7.txt
