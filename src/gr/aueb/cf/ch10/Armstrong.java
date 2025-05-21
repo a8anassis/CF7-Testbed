@@ -17,7 +17,9 @@ public class Armstrong {
 
         System.out.println("Please enter a number (integer)");
         num = scanner.nextInt();
-        numberOfDigits = String.valueOf(num).length();  // valueOf transforms a primitive to String
+
+        // valueOf transforms a primitive to String
+        numberOfDigits = String.valueOf(num).length();
         originalNum = num;
 
         while (num != 0) {
