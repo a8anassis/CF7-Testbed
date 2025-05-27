@@ -4,7 +4,6 @@ public class Cat implements ISpeakable {
     private String name;
 
     public Cat() {
-
     }
 
     public Cat(String name) {

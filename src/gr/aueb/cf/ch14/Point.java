@@ -14,29 +14,19 @@ public class Point {
     public double getX() {
         return x;
     }
-
     public void setX(double x) {
         this.x = x;
     }
 
-    @Override
-    public String toString() {
-        return "(" + x + ")";
+    public void movePlusOne() {
+        x += 1;
     }
 
-    //    public String pointToString() {
-//        return "(" + x + ")";
-//    }
-
-    public void movePlus10() {
+    protected void movePlus10() {
         x += 10;
     }
 
     private void reset() {
         x = 0;
-    }
-
-    protected void movePlusOne() {
-        x += 1;
     }
 }
