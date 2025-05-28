@@ -6,6 +6,13 @@ public class Book {
     private final String author;
     private final String title;
 
+    private Book(Builder builder) {
+        this.id = builder.id;
+        this.author = builder.author;
+        this.title = builder.title;
+        this.isbn = builder.isbn;
+    }
+
     public static class Builder {
         private final long id;
         private final String isbn;
@@ -32,13 +39,6 @@ public class Book {
         public Book build() {
             return new Book(this);
         }
-    }
-
-    private Book(Builder builder) {
-        this.id = builder.id;
-        this.author = builder.author;
-        this.title = builder.title;
-        this.isbn = builder.isbn;
     }
 
     public long getId() {
