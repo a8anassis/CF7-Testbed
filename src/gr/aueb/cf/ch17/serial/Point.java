@@ -1,10 +1,13 @@
-package gr.aueb.cf.ch17.equals_hascode;
+package gr.aueb.cf.ch17.serial;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Point implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private int x;
     private int y;
