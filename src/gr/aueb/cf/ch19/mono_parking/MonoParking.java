@@ -11,6 +11,7 @@ public class MonoParking {
         return List.copyOf(parking);
     }
 
+    // Delegation
     public void addLast(String carId) {
         parking.push(carId);
     }
