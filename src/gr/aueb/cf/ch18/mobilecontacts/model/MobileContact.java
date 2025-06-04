@@ -2,7 +2,8 @@ package gr.aueb.cf.ch18.mobilecontacts.model;
 
 import java.util.Objects;
 
-public class MobileContact extends AbstractEntity {
+public class MobileContact {
+    private Long id;
     private String firstname;
     private String lastname;
     private String phoneNumber;
@@ -11,10 +12,19 @@ public class MobileContact extends AbstractEntity {
 
     }
 
-    public MobileContact(String firstname, String lastname, String phoneNumber) {
+    public MobileContact(Long id, String firstname, String lastname, String phoneNumber) {
+        this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
         this.phoneNumber = phoneNumber;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstname() {
@@ -43,7 +53,7 @@ public class MobileContact extends AbstractEntity {
 
     @Override
     public String toString() {
-        return "Firstname: " + firstname + ", Lastname: " + lastname + ", Phone Number: " + phoneNumber;
+        return "Id: " + id + "Firstname: " + firstname + ", Lastname: " + lastname + ", Phone Number: " + phoneNumber;
     }
 
     @Override

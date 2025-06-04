@@ -3,6 +3,7 @@ package gr.aueb.cf.ch18.mobilecontacts.dao;
 import gr.aueb.cf.ch18.mobilecontacts.model.MobileContact;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IMobileContactDAO {
     MobileContact insert(MobileContact mobileContact);
@@ -13,7 +14,8 @@ public interface IMobileContactDAO {
 
     void deleteByPhoneNumber(String phoneNumber);
 
-    MobileContact getByPhoneNumber(String phoneNumber);
+//    MobileContact getByPhoneNumber(String phoneNumber);
+    Optional<MobileContact> getByPhoneNumber(String phoneNumber);
     boolean userIdExists(Long id);
     boolean phoneNumberExists(String phoneNumber);
 }
