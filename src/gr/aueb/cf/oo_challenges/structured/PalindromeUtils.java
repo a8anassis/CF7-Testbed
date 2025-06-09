@@ -1,14 +1,13 @@
 package gr.aueb.cf.oo_challenges.structured;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class Palindrome {
+public class PalindromeUtils {
 
-    private Palindrome() {
+    private PalindromeUtils() {
 
     }
 

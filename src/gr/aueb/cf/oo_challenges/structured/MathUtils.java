@@ -1,8 +1,8 @@
 package gr.aueb.cf.oo_challenges.structured;
 
-public class PrimeNumberGenerator {
+public class MathUtils {
 
-    private PrimeNumberGenerator() {
+    private MathUtils() {
 
     }
 
