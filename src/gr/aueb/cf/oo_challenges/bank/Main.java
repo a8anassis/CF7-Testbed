@@ -1,5 +1,6 @@
 package gr.aueb.cf.oo_challenges.bank;
 
+import gr.aueb.cf.oo_challenges.bank.dto.AccountInsertDTO;
 import gr.aueb.cf.oo_challenges.bank.exceptions.AccountNotFoundException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.BalanceOvercomeException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.NegativeAmountException;
@@ -36,9 +37,9 @@ public class Main {
                         String newIban = scanner.nextLine();
                         System.out.print("Enter initial balance: ");
                         BigDecimal initialBalance = new BigDecimal(scanner.nextLine());
-                        Account newAccount = new Account(newIban, initialBalance);
+                        AccountInsertDTO accountInsertDTO = new AccountInsertDTO(newIban, initialBalance);
                         // Assumes you have a method like saveOrUpdate in your service
-                        accountService.createNewAccount(newAccount);
+                        accountService.createNewAccount(accountInsertDTO);
                         System.out.println("Account inserted successfully.");
                         break;
 

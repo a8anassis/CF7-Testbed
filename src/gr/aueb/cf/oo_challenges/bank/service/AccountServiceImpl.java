@@ -2,15 +2,18 @@ package gr.aueb.cf.oo_challenges.bank.service;
 
 import gr.aueb.cf.oo_challenges.bank.dao.AccountDAOImpl;
 import gr.aueb.cf.oo_challenges.bank.dao.IAccountDAO;
+import gr.aueb.cf.oo_challenges.bank.dto.AccountInsertDTO;
 import gr.aueb.cf.oo_challenges.bank.exceptions.AccountNotFoundException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.BalanceOvercomeException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.NegativeAmountException;
+import gr.aueb.cf.oo_challenges.bank.mapper.Mapper;
 import gr.aueb.cf.oo_challenges.bank.model.Account;
 
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+import java.util.AbstractCollection;
 import java.util.List;
 
 public class AccountServiceImpl implements IAccountService {
@@ -38,7 +41,8 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public void createNewAccount(Account account) {
+    public void createNewAccount(AccountInsertDTO dto) {
+        Account account = Mapper.mapToModelEntity(dto);
         accountDAO.saveOrUpdate(account);
     }
 
