@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface IAccountService {
-    void createNewAccount(AccountInsertDTO dto);
+    boolean createNewAccount(AccountInsertDTO dto);
     // add remove account service
     void deposit(String iban, BigDecimal amount) throws NegativeAmountException, AccountNotFoundException;
     void withdraw(String iban, BigDecimal amount) throws NegativeAmountException, BalanceOvercomeException, AccountNotFoundException;

@@ -8,6 +8,8 @@ import gr.aueb.cf.oo_challenges.bank.exceptions.BalanceOvercomeException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.NegativeAmountException;
 import gr.aueb.cf.oo_challenges.bank.mapper.Mapper;
 import gr.aueb.cf.oo_challenges.bank.model.Account;
+import gr.aueb.cf.oo_challenges.bank.validation.Validator;
+import org.w3c.dom.ls.LSOutput;
 
 
 import java.math.BigDecimal;
@@ -15,6 +17,7 @@ import java.time.LocalDateTime;
 
 import java.util.AbstractCollection;
 import java.util.List;
+import java.util.Map;
 
 public class AccountServiceImpl implements IAccountService {
 
@@ -41,9 +44,16 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public void createNewAccount(AccountInsertDTO dto) {
+    public boolean createNewAccount(AccountInsertDTO dto) {
+        Map<String , String > errors;
         Account account = Mapper.mapToModelEntity(dto);
+        errors = Validator.validate(dto);
+        if (!errors.isEmpty()) {
+            errors.forEach((k, v) -> System.out.println(v));
+            return false;
+        }
         accountDAO.saveOrUpdate(account);
+        return true;
     }
 
     @Override

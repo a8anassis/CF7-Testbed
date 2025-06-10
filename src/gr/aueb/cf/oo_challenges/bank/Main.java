@@ -39,8 +39,9 @@ public class Main {
                         BigDecimal initialBalance = new BigDecimal(scanner.nextLine());
                         AccountInsertDTO accountInsertDTO = new AccountInsertDTO(newIban, initialBalance);
                         // Assumes you have a method like saveOrUpdate in your service
-                        accountService.createNewAccount(accountInsertDTO);
-                        System.out.println("Account inserted successfully.");
+                        boolean created = accountService.createNewAccount(accountInsertDTO);
+                        if (created) System.out.println("Account inserted successfully.");
+                        else System.out.println("Προσπαθήστε ξανά.");
                         break;
 
                     case "2":
