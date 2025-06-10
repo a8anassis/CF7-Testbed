@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch20.regex;
 
-public class RegExMain {
+public class RegExMain1 {
 
     public static void main(String[] args) {
         String s = "A8ana Androutsos";

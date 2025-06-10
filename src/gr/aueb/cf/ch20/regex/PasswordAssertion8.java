@@ -3,7 +3,7 @@ package gr.aueb.cf.ch20.regex;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PasswordAssertion {
+public class PasswordAssertion8 {
 
     public static void main(String[] args) {
         String passwd = "AUEB!!2025";
