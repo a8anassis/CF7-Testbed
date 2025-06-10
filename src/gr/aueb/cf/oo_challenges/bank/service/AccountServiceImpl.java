@@ -3,6 +3,7 @@ package gr.aueb.cf.oo_challenges.bank.service;
 import gr.aueb.cf.oo_challenges.bank.dao.AccountDAOImpl;
 import gr.aueb.cf.oo_challenges.bank.dao.IAccountDAO;
 import gr.aueb.cf.oo_challenges.bank.dto.AccountInsertDTO;
+import gr.aueb.cf.oo_challenges.bank.dto.AccountReadOnlyDTO;
 import gr.aueb.cf.oo_challenges.bank.exceptions.AccountNotFoundException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.BalanceOvercomeException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.NegativeAmountException;
@@ -18,6 +19,7 @@ import java.time.LocalDateTime;
 import java.util.AbstractCollection;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class AccountServiceImpl implements IAccountService {
 
@@ -94,8 +96,11 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public List<Account> getAccounts() {
-        return accountDAO.getAccounts();
+    public List<AccountReadOnlyDTO> getAccounts() {
+        return accountDAO.getAccounts()
+                .stream()
+                .map(Mapper::mapToReadOnlyDTO)
+                .collect(Collectors.toList());
     }
 }
 
