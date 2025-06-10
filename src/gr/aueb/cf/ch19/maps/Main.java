@@ -36,5 +36,8 @@ public class Main {
 
         // Remove
         countries.remove("GR");
+
+
+        countries.forEach((key, value1) -> System.out.println(key + "," + value1));
     }
 }
