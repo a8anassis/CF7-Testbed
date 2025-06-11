@@ -17,6 +17,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import java.util.AbstractCollection;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -53,11 +54,12 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public void withdraw(String iban, BigDecimal amount) throws NegativeAmountException, BalanceOvercomeException, AccountNotFoundException {
-        double EPSILON = 0.001;
+    public void withdraw(String iban, BigDecimal amount)
+            throws NegativeAmountException, BalanceOvercomeException, AccountNotFoundException {
 
         try {
-            Account account = accountDAO.getByIban(iban).orElseThrow(() -> new AccountNotFoundException("Account with iban= " + iban + " not found"));
+            Account account = accountDAO.getByIban(iban).orElseThrow(() ->
+                    new AccountNotFoundException("Account with iban= " + iban + " not found"));
 
             if (amount.compareTo(BigDecimal.ZERO) < 0) {
                 throw new NegativeAmountException("Invalid amount: " + amount + ". Amount must be positive (input was negative).");
@@ -81,7 +83,8 @@ public class AccountServiceImpl implements IAccountService {
     @Override
     public BigDecimal getBalance(String iban) throws AccountNotFoundException {
         try {
-            Account account = accountDAO.getByIban(iban).orElseThrow(() -> new AccountNotFoundException("Account with iban= " + iban + " not found"));
+            Account account = accountDAO.getByIban(iban).orElseThrow(() ->
+                    new AccountNotFoundException("Account with iban= " + iban + " not found"));
             return account.getBalance();
         } catch (AccountNotFoundException e) {
             System.err.printf("%s. The account with iban=%s not found. \n%s", LocalDateTime.now(), iban, e);
@@ -91,10 +94,17 @@ public class AccountServiceImpl implements IAccountService {
 
     @Override
     public List<AccountReadOnlyDTO> getAccounts() {
-        return accountDAO.getAccounts()
-                .stream()
-                .map(Mapper::mapToReadOnlyDTO)
-                .collect(Collectors.toList());
+//        return accountDAO.getAccounts()
+//                .stream()
+//                .map(Mapper::mapToReadOnlyDTO)
+//                .collect(Collectors.toList());
+
+        List<AccountReadOnlyDTO> readOnlyDTOS = new ArrayList<>();
+        List<Account> accounts = accountDAO.getAccounts();
+        for (Account account : accounts) {
+            readOnlyDTOS.add(Mapper.mapToReadOnlyDTO(account));
+        }
+        return readOnlyDTOS;
     }
 }
 
