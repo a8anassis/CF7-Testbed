@@ -53,20 +53,20 @@ public class Main {
                         // Assumes you have a method like saveOrUpdate in your service
 
                         accountService.createNewAccount(accountInsertDTO);
-                        System.out.println("Account inserted successfully.");
+                        System.out.println("Ο λογαριασμός δημιουργήθηκε επιτυχώς.");
                         break;
 
                     case "2":
-                        System.out.print("Enter IBAN: ");
+                        System.out.print("Εισάγετε το IBAN: ");
                         String depositIban = scanner.nextLine();
-                        System.out.print("Enter amount to deposit: ");
+                        System.out.print("Εισάγετε ποσό για κατάθεση: ");
                         BigDecimal depositAmount = new BigDecimal(scanner.nextLine());
                         accountService.deposit(depositIban, depositAmount);
-                        System.out.println("Deposit successful.");
+                        System.out.println("Επιτυχής κατάθεση.");
                         break;
 
                     case "3":
-                        System.out.print("Enter IBAN: ");
+                        System.out.print("Εισάγετε το IBAN: ");
                         String withdrawIban = scanner.nextLine();
                         System.out.print("Enter amount to withdraw: ");
                         BigDecimal withdrawAmount = new BigDecimal(scanner.nextLine());

@@ -15,7 +15,8 @@ public class Validator {
     public static Map<String, String > validate(AccountInsertDTO dto) {
         Map<String, String> errors = new HashMap<>();
 
-        if (dto.getIBAN() == null || dto.getIBAN().trim().length() < 5) {
+//        if (dto.getIBAN() == null || dto.getIBAN().trim().length() < 5) {
+        if (dto.getIBAN() == null || !dto.getIBAN().trim().matches("\\d{5,}")) {
             errors.put("iban", "Το iban πρέπει να είναι μεγαλύτερο από 5 ψηφία.");
         }
 
