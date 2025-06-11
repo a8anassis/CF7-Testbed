@@ -47,13 +47,7 @@ public class AccountServiceImpl implements IAccountService {
 
     @Override
     public boolean createNewAccount(AccountInsertDTO dto) {
-        Map<String , String > errors;
         Account account = Mapper.mapToModelEntity(dto);
-        errors = Validator.validate(dto);
-        if (!errors.isEmpty()) {
-            errors.forEach((k, v) -> System.out.println(v));
-            return false;
-        }
         accountDAO.saveOrUpdate(account);
         return true;
     }

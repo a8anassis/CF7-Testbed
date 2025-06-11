@@ -1,15 +1,18 @@
 package gr.aueb.cf.oo_challenges.bank;
 
 import gr.aueb.cf.oo_challenges.bank.dto.AccountInsertDTO;
+import gr.aueb.cf.oo_challenges.bank.dto.AccountReadOnlyDTO;
 import gr.aueb.cf.oo_challenges.bank.exceptions.AccountNotFoundException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.BalanceOvercomeException;
 import gr.aueb.cf.oo_challenges.bank.exceptions.NegativeAmountException;
 import gr.aueb.cf.oo_challenges.bank.model.Account;
 import gr.aueb.cf.oo_challenges.bank.service.AccountServiceImpl;
 import gr.aueb.cf.oo_challenges.bank.service.IAccountService;
+import gr.aueb.cf.oo_challenges.bank.validation.Validator;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 
@@ -38,10 +41,19 @@ public class Main {
                         System.out.print("Enter initial balance: ");
                         BigDecimal initialBalance = new BigDecimal(scanner.nextLine());
                         AccountInsertDTO accountInsertDTO = new AccountInsertDTO(newIban, initialBalance);
+
+                        Map<String , String > errors;
+                        errors = Validator.validate(accountInsertDTO);
+                        if (!errors.isEmpty()) {
+                            errors.forEach((k, v) -> System.out.println(v));
+                            System.out.println("Ο λογαριασμός δεν δημιουργήθηκε. Προσπαθήστε ξανά.");
+                            break;
+                        }
+
                         // Assumes you have a method like saveOrUpdate in your service
-                        boolean created = accountService.createNewAccount(accountInsertDTO);
-                        if (created) System.out.println("Account inserted successfully.");
-                        else System.out.println("Προσπαθήστε ξανά.");
+
+                        accountService.createNewAccount(accountInsertDTO);
+                        System.out.println("Account inserted successfully.");
                         break;
 
                     case "2":
@@ -70,7 +82,7 @@ public class Main {
                         break;
 
                     case "5":
-                        List<Account> accounts = accountService.getAccounts();
+                        List<AccountReadOnlyDTO> accounts = accountService.getAccounts();
                         if (accounts.isEmpty()) {
                             System.out.println("No accounts found.");
                         } else {
