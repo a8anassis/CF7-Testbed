@@ -11,15 +11,13 @@ public class DateMatcher {
         Pattern pattern = Pattern.compile("(\\d{2})/(\\d{2})/(\\d{4})");
         Matcher matcher = pattern.matcher(date);
 
-        if (matcher.matches()) {
+        while (matcher.find()) {    // tries to match the whole string
             String month = matcher.group(1);
             String day = matcher.group(2);
             String year = matcher.group(3);
 
             String grDate = day + "/" + month + "/" + year;
             System.out.println("GR-Date: " + grDate);
-        } else {
-            System.out.println("Pattern not matches");
         }
     }
 }

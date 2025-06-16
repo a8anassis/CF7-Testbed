@@ -10,7 +10,7 @@ public enum Actor {
         this.role = role;
     }
 
-    public String toRole() {
+    public String getRole() {
         return role;
     }
 }

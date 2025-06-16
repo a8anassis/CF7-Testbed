@@ -11,13 +11,13 @@ public class DateMatcher2 {
         Pattern pattern = Pattern.compile("(\\d{2})/(\\d{2})/(\\d{4})");
         Matcher matcher = pattern.matcher(date);
 
-        while (matcher.find()) {
+        while (matcher.find()) { // finds tokens
             String grDate = "";
             for (int i = 1; i <= matcher.groupCount(); i++) {
-                System.out.print(matcher.group(i) + " ");
-                // grDate += matcher.group(i) + "/";
+                //System.out.print(matcher.group(i) + " ");
+                grDate += (i != matcher.groupCount()) ? matcher.group(i) + "/" : matcher.group(i);
             }
-            System.out.println();
+            System.out.println(grDate);
         }
     }
 }
